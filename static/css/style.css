@@ -1,0 +1,84 @@
+/* a {
+    text-decoration: none !important;
+} */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua */
+    color: black;
+}
+
+/* body {
+    padding: 10px; 
+} */
+
+.carousel-item {
+    height: 600px;
+}
+
+/* .header {
+    margin-top: 10px;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    background: transparent;
+} */
+
+.header {
+    /* border: 1px solid magenta; */
+  position:fixed;
+  top:5px;
+  left:10px;
+  height: 40px;
+  z-index: 70;
+  width: 99%;
+  padding: 0;
+  margin: auto;
+}
+
+.brand {
+    width: 25%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+.topnav {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: auto;
+    float: right;
+    height: auto;
+    margin: auto;
+}
+
+.brand a {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.brand img {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: auto;
+}
+
+.topnav a{
+    /* float: left; */
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.topnav a:hover {
+    border-bottom: 2px solid black;
+
+}
+
+.active-l {
+    font-size: 25px;
+    opacity: 0.8;
+    border-bottom: 3px solid black;
+}

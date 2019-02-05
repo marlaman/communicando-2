@@ -1,0 +1,182 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background: linear-gradient(to bottom, #051e3e 0%, #851e3e 100%) no-repeat; */
+    
+}
+
+.main {
+    position: relative;
+    top: 60px;
+    width: 95%;
+    margin-top: 30px;
+    margin: auto;
+    padding: 10px;
+    height: 80%;
+    /* border: 1px solid; */
+}
+
+.header {
+    /* border: 1px solid magenta; */
+    position: sticky;
+    width: 99%;
+}
+
+.location {
+    /* border: 1px solid red; */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    /* margin:auto; */
+    /* float: left; */
+    display: inline-block;
+
+}
+
+.details {
+    /* border: 1px solid green; */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 45%;
+    height: 100%;
+
+    float: right;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;;
+}
+
+.contact-main   {
+    width: 100%;
+    height: 24%;
+    /* border: 3px solid; */
+    margin: auto;
+    padding: auto;
+}
+
+.social-media {
+    width: 48%;
+    height: 100%;
+    float: left;
+    /* height: 24%; */
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+.contact {
+    width: 48%;
+    height: 100%;
+    float: right;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    /* margin: auto; */
+}
+
+.contact span {
+    /* border: 1px solid; */
+    margin: auto;
+    /* font-size: 20px; */
+}
+
+.mapouter{
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 10px auto;
+}
+
+.map {
+    width: 100%;
+    height: 80%;
+}
+  
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+.address {
+    /* border: 1px solid gray; */
+    /* margin: 5px; */
+    /* padding: 10px;   */
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    overflow: auto;
+}
+
+h2 {
+    border-bottom: 3px solid red;
+}
+
+.social {
+    width: 100%;
+    /* border: 1px solid maroon; */
+    /* padding: 10px; */
+}
+
+.social a{
+    /* width: 50px;
+    height: 50px; */
+    /* border: 1px solid red; */
+    display: inline-block;
+    color: red;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 90%;
+}
+
+.social img {
+    width: 50px;
+    height: auto;
+}
+
+.message-us {
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid mediumblue; */
+}
+
+.msg-form {
+    width: 99%;
+    /* height: 90%; */
+    /* border: 1px solid rosybrown; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    /* border: 1px solid red; */
+    vertical-align: text-top;
+}
+
+.row label {
+    width: 20%;
+    display: inline-block;
+    /* border: 1px solid blue; */
+    /* float: left; */
+}
+
+.row input[type="text"], input[type="email"], textarea {
+    width: 75%;
+    display: inline-block;
+    /* border: 1px solid green; */
+    vertical-align: top;
+    /* float: right; */
+}
+
+.row input[type="submit"] {
+    display: inline-block;
+    margin: auto;
+}

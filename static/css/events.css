@@ -1,0 +1,105 @@
+/* .navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+} */
+
+/* html {
+  height: 100%;
+} */
+
+body {
+  overflow-y: hidden;
+  min-height: 100%; 
+  background: linear-gradient(to bottom, #2a2d5a 0%, #ffc7d4 100%);
+  background-repeat: no-repeat;
+}
+
+/* .navbar {
+  margin-bottom: 10px;
+  background: transparent;
+  height: 70px; 
+  background-color: #ff99cc;
+} */
+
+.outer {
+  position: relative;
+  top: 60px;
+}
+
+.carousel-item {
+  /* width: 90%; */
+  /* background-color: #fff; */
+  padding: 10px;
+  margin: 10px;
+} 
+
+.carousel-item img {
+  width: 45%;
+  height: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.carousel-item {
+  padding: 5px;
+  margin: 5px;
+  background: #fff;
+}
+
+.carousel-item .info{
+  width: 52%;
+  float: right;
+  /* margin: -5px; */
+  margin-right: 10px;
+}
+
+.carousel-inner {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* background-color: #fff; */
+}
+
+.carousel .slide{
+  margin-top: 10px;
+}
+
+.info h2 {
+  border-bottom: 1px solid;
+}
+
+.info {
+  text-align: justify;
+  height: 100%;
+  background-color: #fff;
+}
+
+.top {
+  height: 85%;
+}
+
+.register-btn {
+  width: 50%;
+  margin: auto;
+  height: 15%;
+  vertical-align: bottom;
+}
+
+.register-btn div{
+  width: 40%;
+  margin: auto;
+}
+
+.telugu h2{
+  font-family: 'Ramaraja', serif;
+  font-size: 50px;
+}
+
+.telugu p {
+  font-family: 'Mallanna', sans-serif;
+  font-size: 25px;
+}

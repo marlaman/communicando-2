@@ -1,0 +1,155 @@
+body.slider__body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+section {
+	height: 100%;
+}
+
+/* .header {
+	position: fixed;
+} */
+
+#ccd {
+	background: linear-gradient(225deg, #ffc27d, #ff8e93);
+}
+
+#literati {
+	background: linear-gradient(#f3defc, #63a3e6);
+}
+
+#staff {
+	background: linear-gradient(#d2fcad, #22eaeb);
+}
+
+#sr_coordinators {
+	background: linear-gradient(#f0bed4, #a163f5);
+}
+
+#jr_coordinators {
+	background: linear-gradient(#65cce1, #6365ec);
+}
+
+section > span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 7vw;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.slider__container {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 500ms ease-in-out;
+	transition: -webkit-transform 500ms ease-in-out;
+	-o-transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.slider__page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__indicators {
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.slider__indicator {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 10px 0;
+	border-radius: 100px;
+	background-color: #fff;
+	cursor: default;
+}
+.slider__indicator--active {
+	opacity: 0.3;
+}
+
+.main {
+	width: 100%;
+	margin: auto;
+	vertical-align: middle;
+	/* border: 1px solid; */
+	height: 100%;
+	padding: 30px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.main-inner {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: auto;
+	margin: auto;
+	/* margin-top: 70px; */
+	/* border: 1px solid; */
+	padding: 10px;	
+}
+
+.pic{
+	width: 30%;
+	float: left;
+	/* border: 1px solid; */
+}
+
+.content {
+	width: 65%;
+	float: right;
+	/* border: 1px solid; */
+
+}
+
+.pic img{
+	margin: auto;
+	width: 90%;
+}
+
+.content h1{
+	border-bottom: 5px solid #fff;
+	font-family: 'Great Vibes', cursive, sans-serif;
+	text-emphasis: bold;
+	font-size: 50px;
+}
+
+.content p {
+	text-align: justify;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 25px;
+}
+
+#ccd .content p{
+	font-size: 30px;
+}
+
+.link .active a{
+	font-size: 60px;
+	border-bottom: 2px solid red;
+}
