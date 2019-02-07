@@ -8,44 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel = "icon" type = "image/png" href = "../static/images/icon.png">
-    <link href="https://fonts.googleapis.com/css?family=BenchNine|Great+Vibes" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=BenchNine|Great+Vibes" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round" rel="stylesheet">
     <!-- For apple devices -->
     <link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
-
-
     <link rel="stylesheet" type="text/css" href="../static/css/fullpage.css" />
     <!-- <link rel="stylesheet" type="text/css" href="../static/css/examples.css" /> -->
     <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/about.css" />
 
-
-    <!--[if IE]>
-        <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
-    <![endif]-->
 </head>
+
 <body>
-
-<!-- <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-</ul> -->
-<div class="header">
-  <div class="brand">
-    <a href="#"><img  src="../static/images/logo.png" alt="Communicando Logo"></a>
+  <div class="header">
+    <div class="small">
+      <div class="brand">
+        <a href="../"><img  src="../static/images/logo.png" alt="Communicando Logo"></a>
+      </div>
+      <div class="topnav right">
+        <a class="link" href="../">Home</a>
+  	    <a class="link active-l" href="../about/">About</a>
+        <a class="link" href="../team/">Team</a>
+        <a class="link" href="../events/">Events</a>
+        <a class="link" href="../contact/">Contact Us</a>
+      </div>
+    </div> 
   </div>
-  <div class="topnav right">
-    <a class="link" href="../">Home</a>
-  	<a class="link active-l" href="../about/">About</a>
-    <a class="link" href="../team/">Team</a>
-    <a class="link" href="../events/">Events</a>
-    <a class="link" href="../contact/">Contact Us</a>
-  </div> 
-</div>
 
-<div id="fullpage">
+  <div id="fullpage">
     <div class="section active" id="section0">
         <div class="main">
           <div class="main-inner">
@@ -63,8 +53,20 @@
     <div class="section" id="section1">
         <div class="main">
           <div class="main-inner">
-            <div>
-              <img class="pic" />
+            <div class="pic other">
+              <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">LITERATI 9.0</text>
+                </symbol>
+                  
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
             </div>
             <div class="content">
               <h1>About Literati</h1>
@@ -80,11 +82,11 @@
         <h1>Section 1</h1>
     </div> -->
 
-</div>
+  </div>
 
-<script type="text/javascript" src="../static/js/fullpage.js"></script>
+  <script type="text/javascript" src="../static/js/fullpage.js"></script>
 <!-- <script type="text/javascript" src="../static/js/examples.js"></script> -->
-<script type="text/javascript">
+  <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         sectionsColor: ['linear-gradient(225deg, #ffc27d, #ff8e93)', 'linear-gradient(#f3defc, #63a3e6)'],
         anchors: ['ccd', 'literati'],
@@ -94,7 +96,7 @@
         navigationPosition: 'right',
         // navigationTooltips: ['First page', 'Second page', 'Third and last page']
     });
-</script>
+  </script>
 
-</body>
+  </body>
 </html>

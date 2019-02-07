@@ -19,18 +19,21 @@
   <body>
   
     <!-- <div class="container">    -->
-	<div class="header" style="position:fixed;">
-		<div class="brand">
-		  <a href="../"><img  src="D:\Projects\Literati 9\static\images\logo.png"></a>
+		<div class="header">
+			<div class="small">
+    		<div class="brand">
+    		  <a href="../"><img alt="Communicando Logo" src="../static/images/logo.png"></a>
+    		</div>
+    		<div class="topnav right">
+      		<a class="link" href="../">Home</a>
+      		<a class="link" href="../about/">About</a>
+      		<a class="link" href="../team/">Team</a>
+      		<a class="link" href="../events/">Events</a>
+      		<a class="link" href="../contact/">Contact Us</a>
+				</div> 
+			</div>
 		</div>
-		<div class="topnav right">
-		    <a class="link" href="../">Home</a>
-			<a class="link" href="../about/">About</a>
-		    <a class="link" href="../team/">Team</a>
-			<a class="link" href="../events/">Events</a>
-			<a class="link" href="../contact/">Contact Us</a>
-		</div> 
-	</div>
+		<br />
 		
 		<div class="main">
 			<h1>Registration Form</h1>
@@ -41,7 +44,7 @@
 						<div class="col-half">
 							<div class="input-field">
 								<span><i aria-hidden="true" class="fa fa-user"></i></span>
-								<input type="text" name="FName" placeholder="First Name" />
+								<input type="text" name="FName" placeholder="First Name" required/>
 							</div>
 						</div>
 						
@@ -56,21 +59,21 @@
 					<div class="form-row">
 						<div class="input-field">
 							<span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-							<input type="email" name="email" placeholder="Email" />
+							<input type="email" name="email" placeholder="Email" required/>
 						</div>
 					</div>
 					
 					<div class="form-row">
 						<div class="input-field">
 							<span><i aria-hidden="true" class="fas fa-mobile"></i></span>
-							<input type="text" name="number" placeholder="Phone Number" />
+							<input type="text" name="number" placeholder="Phone Number" required/>
 						</div>
 					</div>
 					
 					<div class="form-row">
 						<div class="input-field">
 							<span><i aria-hidden="true" class="fas fa-university "></i></span>
-							<input type="text" name="college" placeholder="College" />
+							<input type="text" name="college" placeholder="College" required/>
 						</div>
 					</div>
 
@@ -116,20 +119,22 @@
 					
 					<div class="form-row">
 						<div class="label">
-							<label>Events</label>
+							<!-- <span><i class="fas fa-calendar-alt"></i></span> -->
+							<label style="text-align:right;">Events</label>
 						</div>
 						<div class="buttons">
 							<div class="inner-chk">
-								<label><input type="checkbox" name="events" value="Mr & Ms Literati" />Mr & Ms Literati</label>
+								<label><input type="checkbox" name="events" value="Mr & Ms Literati" checked />Mr & Ms Literati</label>
 								<label><input type="checkbox" name="events" value="Take de Bait" />Take de Bait</label>
 								<label><input type="checkbox" name="events" value="Fastest Finger First" />Fastest Finger First</label>
-								<label><input type="checkbox" name="events" value="Whodunnit" />Whodunnit</label>
+								<label><input type="checkbox" name="events" value="Whodunnit" style="width:10px;" />Whodunnit</label>
+
 							</div>
 							<div class="inner-chk">
 								<label><input type="checkbox" name="events" value="Melange" />Melange</label>
 								<label><input type="checkbox" name="events" value="Kathyogita" />Kathyogita</label>
 								<label><input type="checkbox" name="events" value="Maya Vichhuta" />Maya Vichhuta</label>
-								<label><input type="checkbox" name="events" value="Write Angle" />Write Angle</label>
+								<label><input type="checkbox" name="events" value="Write Angle" style="width:10px;" />Write Angle</label>
 							</div>
 						</div>				
 					

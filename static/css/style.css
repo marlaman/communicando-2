@@ -1,6 +1,6 @@
-/* a {
-    text-decoration: none !important;
-} */
+/* @import url('https://fonts.googleapis.com/css?family=Khula'); */
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Khula|Varela+Round');
 
 body, html {
     width: 100%;
@@ -9,33 +9,30 @@ body, html {
     color: black;
 }
 
-/* body {
-    padding: 10px; 
-} */
-
-.carousel-item {
-    height: 600px;
+h1, h2 {
+    font-family: 'Bree Serif', serif;
 }
 
-/* .header {
-    margin-top: 10px;
-    position: sticky;
-    width: 100%;
-    height: auto;
-    padding: 0 20px;
-    background: transparent;
-} */
+p {
+    font-family: 'Varela Round', sans-serif;
+}
 
 .header {
     /* border: 1px solid magenta; */
-  position:fixed;
-  top:5px;
-  left:10px;
-  height: 40px;
-  z-index: 70;
-  width: 99%;
-  padding: 0;
-  margin: auto;
+    position:fixed;
+    top: 5px;
+    /* left: 10px; */
+    height: 10%;
+    z-index: 70;
+    width: 100%;
+    padding: 5px 10px;
+    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.small {
+    width: 90%;
+    margin: auto;
 }
 
 .brand {
@@ -66,19 +63,42 @@ body, html {
 
 .topnav a{
     /* float: left; */
+    font-family: 'Khula', sans-serif;
+    font-size: 20px;
     margin: 10px;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     /* border: 1px solid red; */
 }
 
 .topnav a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid red;
+    text-decoration: none;
+    color: #d3d3d3;
 
 }
 
 .active-l {
-    font-size: 25px;
+    /* font-size: 25px; */
     opacity: 0.8;
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid red;
 }
+
+
+/* body {
+    padding: 10px; 
+} */
+
+/* .carousel-item {
+    height: 600px;
+} */
+
+/* .header {
+    margin-top: 10px;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    background: transparent;
+} */
