@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round');
+
+h1, h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+body {
+  overflow-y: hidden;
+  min-height: 100%; 
+  background: linear-gradient(to bottom, #2a2d5a 0%, #ffc7d4 100%);
+  background-repeat: no-repeat;
+}
+
+/* .navbar {
+  margin-bottom: 10px;
+  background: transparent;
+  height: 70px; 
+  background-color: #ff99cc;
+} */
+
+#fullpage {
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.outer {
+  position: relative;
+  top: 60px;
+}
+
+
+.item {
+  position: absolute;
+  top: -270px;
+  padding: 10px;
+  margin: 10px auto;
+  /* border: 3px solid blue; */
+  width: 100%;
+  text-align: center;
+  height: 530px;
+} 
+
+
+
+.inner {
+  position: relative;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  text-align: center;
+}
+
+.carousel .slide{
+  margin-top: 10px;
+}
+
+.info h2 {
+  border-bottom: 1px solid;
+}
+
+.img {
+  /* border: 1px solid yellow; */
+  width: 40%;
+  float: left;
+}
+
+.img img {
+  width: 100%;
+}
+
+.info {
+  padding: 0 10px;
+  width: 55%;
+  float: right;
+  /* margin: -5px; */
+  margin-right: 10px;
+  text-align: justify;
+  height: 100%;
+  color: #fff;
+  /* border: 1px solid red; */
+  /* background-color: #fff; */
+}
+
+
+
+.top {
+  height: 90%;
+}
+
+.register-btn {
+  width: 50%;
+  margin: auto;
+  height: 10%;
+  vertical-align: bottom;
+  /* border: 1px solid wheat; */
+}
+
+.register-btn div{
+  width: 40%;
+  margin: auto;
+}
+
+.telugu h2{
+  font-family: 'Ramaraja', serif;
+  font-size: 50px;
+}
+
+.telugu p {
+  font-family: 'Mallanna', sans-serif;
+  font-size: 25px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed headers - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../static/css/index.css" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="../static/css/fullpage.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="header" class="header">
+		<div class="small">
+    	<div class="brand">
+    	  <a href="../"><img  src="../static/images/logo.png"></a>
+    	</div>
+    	<div class="topnav right">
+        <a class="link active-l" href="../">Home</a>
+       	<a class="link" href="../about/">About</a>
+        <a class="link" href="../team/">Team</a>
+        <a class="link" href="../events/">Events</a>    
+        <a class="link" href="../contact/">Contact Us</a>
+        <a class="img-link" href="https://www.facebook.com/literarybrainsatwork/" target="_blank"><img style="width:30px;" src="../static/images/f.png" alt="Facebook" /></a>
+		    <a class="img-link" href="https://www.instagram.com/communicando/" target="_blank"><img src="../static/images/i.png" alt="Instagram" /></a>
+		  </div>
+		</div>
+	</div>
+<!-- <div id="footer">Footer</div> -->
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+				<div class="main">
+						<div id="carouselExampleIndicators" class="carousel slide" style="margin-top: 0px;;" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-80" src="../static/images/9/IMG-20190209-WA0003.jpg" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-80" src="../static/images/9/IMG_20190209_170113.jpg" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-80" src="../static/images/9/IMG_20190209_170033.jpg" alt="Third slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-80" src="../static/images/9/IMG_20190209_170005.jpg" alt="Fourth slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-80" src="../static/images/9/IMG_20190209_170256.jpg" alt="Fifth slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-80" src="../static/images/9/IMG_20190209_170247__01.jpg" alt="Sixth slide">
+								</div>
+							</div>
+								
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+		</div>
+		<div class="section" id="section1">
+	    
+
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="../static/js/fullpage.js"></script>
+<!-- <script type="text/javascript" src="examples.js"></script> -->
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        css3: true,
+        navigation: true,
+        navigationPosition: '',
+        // navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+</script>
+
+</body>
+</html>

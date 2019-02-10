@@ -2,38 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>About</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel = "icon" type = "image/png" href = "../static/images/icon.png">
-    <!-- <link href="https://fonts.googleapis.com/css?family=BenchNine|Great+Vibes" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+  <link rel = "icon" type = "image/png" href = "../static/images/icon.png">
     <!-- For apple devices -->
-    <link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
-    <link rel="stylesheet" type="text/css" href="../static/css/fullpage.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="../static/css/examples.css" /> -->
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/about.css" />
+  <link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/about.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/fullpage.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
 <body>
   <div class="header">
-    <div class="small">
-      <div class="brand">
-        <a href="../"><img  src="../static/images/logo.png" alt="Communicando Logo"></a>
-      </div>
-      <div class="topnav right">
-        <a class="link" href="../">Home</a>
-  	    <a class="link active-l" href="../about/">About</a>
-        <a class="link" href="../team/">Team</a>
-        <a class="link" href="../events/">Events</a>
-        <a class="link" href="../contact/">Contact Us</a>
-      </div>
-    </div> 
-  </div>
+		<div class="small">
+    	<div class="brand">
+    	  <a href="../"><img alt="Communicando Logo" src="../static/images/logo.png"></a>
+    	</div>
+    	<div class="topnav right">
+      	<a class="link" href="../">Home</a>
+      	<a class="link active-l" href="../about/">About</a>
+				<a class="link" href="../team/">Team</a>
+				<a class="link" id="events" href="../events/">Events <i class="fa fa-caret-down"></i></a>
+				<div class="dropdown-content">
+         	<a href="../events/" class="link">Literati 9</a>
+         	<a href="../literati8/" class="link">Literati 8</a>
+         	<!-- <a href="../online/" class="link">Online Events</a> -->
+				</div>
+				<a class="link" href="../contact/">Contact Us</a>
+				<a class="img-link" href="https://www.facebook.com/literarybrainsatwork/" target="_blank"><img style="width:30px;" src="../static/images/f.png" alt="Facebook" /></a>
+				<a class="img-link" href="https://www.instagram.com/communicando/" target="_blank"><img src="../static/images/i.png" alt="Instagram" /></a>
+			</div> 
+		</div>
+	</div>
 
   <div id="fullpage">
     <div class="section active" id="section0">
@@ -88,7 +91,7 @@
 <!-- <script type="text/javascript" src="../static/js/examples.js"></script> -->
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['linear-gradient(225deg, #ffc27d, #ff8e93)', 'linear-gradient(#f3defc, #63a3e6)'],
+        sectionsColor: ['linear-gradient(to bottom right, #ffff66 0%, #99ffcc 100%)', 'linear-gradient(#f3defc, #63a3e6)'],
         anchors: ['ccd', 'literati'],
         menu: '#menu',
         lazyLoad: true,

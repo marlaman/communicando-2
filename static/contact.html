@@ -9,10 +9,9 @@
     <!-- For apple devices -->
     <link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <script src="./js/slider.js"></script> -->
-    <link rel="stylesheet" href="../static/css/contact.css">
-    <!-- <link rel="stylesheet" href="./css/events.css" type="text/css" /> -->
+    <link rel="stylesheet" href="../static/css/contact.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   
   <body>
@@ -27,7 +26,9 @@
         	<a class="link" href="../about/">About</a>
         	<a class="link" href="../team/">Team</a>
         	<a class="link" href="../events/">Events</a>
-      	  <a class="link active-l" href="../contact/">Contact Us</a>
+          <a class="link active-l" href="../contact/">Contact Us</a>
+          <a class="img-link" href="https://www.facebook.com/literarybrainsatwork/" target="_blank"><img style="width:30px;" src="../static/images/f.png" alt="Facebook" /></a>
+				  <a class="img-link" href="https://www.instagram.com/communicando/" target="_blank"><img src="../static/images/i.png" alt="Instagram" /></a>
 			  </div> 
 		  </div>
 	  </div>
@@ -54,19 +55,20 @@
           <div class="social-media">
             <h2>Follow us on</h2>
             <div class="social">
-              <a href="https://www.facebook.com/literarybrainsatwork/">
+              <a href="https://www.facebook.com/literarybrainsatwork/" target="_blank">
                 <img src="../static/images/fb.png" alt="Facebook" />
               </a>
-              <a href="https://www.instagram.com/communicando/">
+              <a href="https://www.instagram.com/communicando/" target="_blank">
                 <img src="../static/images/instagram.png" alt="instagram" />
               </a>
             </div>
           </div>
         
           <div class="contact">
-            <h2>Call us on</h2>
-            <span>+91 94904 00427</span>
-            <span style="float:right;">+91 96636 03120</span>
+            <h2>Contact us at</h2>
+            <span>Anukruti - +91 94904 00427</span><br />
+            <span>Nihal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- +91 96636 03120</span><br />
+            <span>cbitcommunicando@gmail.com</span>
             </ul>
           </div>
         </div>
@@ -74,7 +76,7 @@
         <div class="message-us">
           <h2>Message Us</h2>
           <div class="msg-form">
-            <form action="">
+            <form action="/contact/" method="POST">
               <div class="row">
                   <label>Name: </label>
                   <input type="text" name="name" id="name" /><br />
@@ -96,6 +98,15 @@
       </div>
     </div>
 
+    {% with messages = get_flashed_messages() %}
+		  {% if messages %}
+				{% for message in messages %}
+				  <script>
+					//	alert( {{ message }});
+				  </script>
+				{% endfor %}
+		  {% endif %}
+    {% endwith %}
 
 
 

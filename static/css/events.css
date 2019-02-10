@@ -12,7 +12,7 @@ p {
 body {
   overflow-y: hidden;
   min-height: 100%; 
-  background: linear-gradient(to bottom, #2a2d5a 0%, #ffc7d4 100%);
+  background: linear-gradient(to bottom right, #2a2d5a 0%, #ffc7d4 100%);
   background-repeat: no-repeat;
 }
 
@@ -35,7 +35,7 @@ body {
 
 
 .item {
-  padding: 10px;
+  padding: 50px;
   margin: 10px auto;
   /* border: 3px solid blue; */
   width: 100%;
@@ -43,12 +43,11 @@ body {
   height: 530px;
 } 
 
-
-
 .inner {
   width: 60%;
   height: auto;
   margin: auto;
+
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   text-align: center;
 }
@@ -58,7 +57,9 @@ body {
 }
 
 .info h2 {
-  border-bottom: 1px solid;
+  border-bottom: 3px solid;
+  padding-bottom:10px;
+  border-color: #000000;
 }
 
 .img {
@@ -84,16 +85,37 @@ body {
   /* background-color: #fff; */
 }
 
+.top::-webkit-scrollbar {
+  width: 5px;
+}
 
+/* Track */
+.top::-webkit-scrollbar-track {
+  background: #0000;
+}
+ 
+/* Handle */
+.top::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.top::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 .top {
-  height: 90%;
+  height: 70%;
+  width: 100%;
+  padding-right: 10px;
+  overflow-y: auto;
 }
 
 .register-btn {
   width: 50%;
   margin: auto;
   height: 10%;
+  padding-top: 10px;
   vertical-align: bottom;
   /* border: 1px solid wheat; */
 }
@@ -105,10 +127,10 @@ body {
 
 .telugu h2{
   font-family: 'Ramaraja', serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .telugu p {
   font-family: 'Mallanna', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }

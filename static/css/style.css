@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Khula'); */
+@import url('https://fonts.googleapis.com/css?family=Khula');
 
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Khula|Varela+Round');
 
@@ -25,6 +25,7 @@ p {
     height: 10%;
     z-index: 70;
     width: 100%;
+    max-height: 70px;
     padding: 5px 10px;
     margin: auto;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
@@ -61,21 +62,22 @@ p {
     height: auto;
 }
 
-.topnav a{
+.link{
     /* float: left; */
     font-family: 'Khula', sans-serif;
     font-size: 20px;
-    margin: 10px;
-    color: #fff;
+    margin: 15px 10px;
+    color: #000000;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
     /* border: 1px solid red; */
 }
 
-.topnav a:hover {
+.link:hover {
     border-bottom: 4px solid red;
+    opacity: 0.8;
     text-decoration: none;
-    color: #d3d3d3;
 
 }
 
@@ -85,20 +87,43 @@ p {
     border-bottom: 4px solid red;
 }
 
+.img-link img {
+    margin: 5px 0px 10px 0px;    
+    width: 40px;
+    height: 30px;
+    /* border: 1px solid red; */
+}
 
-/* body {
-    padding: 10px; 
-} */
+.img-link:hover{
+    opacity: 0.8;
+}
 
-/* .carousel-item {
-    height: 600px;
-} */
 
-/* .header {
-    margin-top: 10px;
-    position: sticky;
-    width: 100%;
-    height: auto;
-    padding: 0 20px;
-    background: transparent;
-} */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 270px;
+    top: 40px;
+    text-align: center;
+}
+
+ .dropdown-content a {
+    float: none;
+    color: black;
+    /* padding: 0px 5px;  */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+} 
+
+.dropdown-content:hover{
+    display: block;
+}
+
+#events:hover + .dropdown-content {
+    display: block;
+}
