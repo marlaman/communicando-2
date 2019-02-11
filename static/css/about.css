@@ -185,7 +185,7 @@ svg {
 }
 
 .text-copy:nth-child(2){
-	stroke: #840037;
+	stroke: #0099FF;
 	animation-delay: -2s;
 }
 
@@ -207,3 +207,4 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+

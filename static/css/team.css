@@ -8,6 +8,10 @@ p {
   font-family: 'Varela Round', sans-serif;
 }
 
+.bg {
+    background: linear-gradient(to bottom right, #33ccff 0%, #ffffcc 60%);
+}
+
 .main {
     position: relative;
     top: 60px;
@@ -40,14 +44,18 @@ h1{
 
 .staff {
     width: 90%;
+    height: 75%;
     margin: auto;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     text-align: center;
+    /* border: 1px solid white; */
 }
 
 .card {
-    margin: 70px; 
-    width: 20%;
+    margin:10px 70px; 
+    width: 30%;
+    height: 80%;
+    background: transparent;
 }
 
 .card h4, p {
@@ -59,25 +67,30 @@ h1{
 }
 
 .card img {
-    width: 98%;
-    /* height: 300px; */
-    max-height: 165px;
-    max-width: 200px;
+    width: 100%;
+    height: 70%;
+    max-height: 80%;
+    /* max-width: 200px; */
     object-fit: cover;
 }
 
 .chiefs {
+    /* border: 2px solid white; */
     width: 90%;
+    height: 75%;
     padding: 10px;
-    margin: 53px;
+    margin: auto;
     text-align: center;
 }
 
 .chiefs .card{
-    width: 20%;
-    margin: 50px;
+    margin: 30px;
+    width: 25%;
+    /* margin: 50px; */
 }
 
-.bg{
-    background: linear-gradient(to bottom right, #33ccff 0%, #ffffcc 60%);
-}
+/* @media screen and (max-width: 800px) {
+    .left, .main, .right {
+    width: 100%; The/ width is 100%, when the viewport is 800px or smaller
+    }
+} */
